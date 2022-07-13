@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<center>
+		<table border="4">
+			<thead>
+				<tr>
+					<th>Student's Name</th>
+					<td><input type="text" name="fname" id="sname"></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<th>rollNumber</th>
+					<td><input type="text" name="rollNumber" id="rollNumber"></td>
+				</tr>
+				<tr>
+					<th>Date of Birth</th>
+					<td><input type="date" name="DOB" id="DOB"></td>
+				</tr>
+				<tr id="btna">
+					<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+				</tr>
+			</tbody>
+		</table>
+        <br>
+        <input type="button" name="Sort By Name" id="SortbyName" value="Sort by Name" onclick="SortbyName()">
+        &nbsp;
+        <input type="button" name="Sort By rollNumber" id="SortbyRoll" value="Sort by rollNumber" onclick="SortbyRoll()">
+        
+        &nbsp;
+        <input type="button" name="Sort By dob" id="Sortbydob" value="Sort by DOB" onclick="SortbyDOB()">
+        &nbsp;
+        <input type="date" name="LessthanDate" id="LessthanDate">
+        <input type="button" name="button" id="btn" value="show" onclick="LessthanDate()">
+        <br><br>
+
+
+    
+
+
+		<table border="4" id="show">
+			<thead>
+				<tr>
+					<th>Student's Name</th>
+					<th>rollNumber</th>
+					<th>Date of Birth</th>
+				</tr>
+			</thead>
+		</table>
+	</center>
+	
+	
+</body>
+</html>

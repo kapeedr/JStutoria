@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+          function fib() {
+let ar = [0, 1];
+let number=document.getElementById('txtloop').value;
+for (let i = 2; i < number; i++)
+ ar[i] = ar[i-1]+ ar[i-2];
+  document.getElementById('output').innerHTML=ar[number-1];
+}
+        </script>
+
+    </head>
+    <body>
+        <input type text="text" id="txtloop" />
+        <button onclick="fib()">Enter</button>
+        <p id="output"></p>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cd = "";
+function dothis() {
+    fetch("https://reqres.in/api/products/3").then(res => res.json()).then(x =>
+        cd = '{ <br> "data" : <br> { <br>' + '"id" : ' + x.data.id + '<br> "name" : ' + x.data.name + ', <br> "year" : ' + x.data.year + ', "color" : ' + x.data.color + ', <br> "pantone_value" : ' + x.data.pantone_value + '<br> }, <br> "support" : <br> { <br> "url" : ' + x.support.url + ', <br> "text" : ' + x.support.text + '<br> } <br> }',
+        document.getElementById("res").innerHTML = cd
+    )
+}
+    </script>
+</head>
+<body>
+    <p id="res"></p>
+    <button onclick="dothis()">see</button>
+</body>
+</html>

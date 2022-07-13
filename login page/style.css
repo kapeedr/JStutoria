@@ -1,0 +1,82 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#d6dadbf7;  
+    font-family: 'Arial';  
+}  
+.kris{
+    width: 50px;
+    height: 50px;
+   
+    /* Center horizontally*/
+    margin: 0 auto;
+  
+    
+
+
+}
+
+.button{
+    background-color: #63f2f4;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.login{  
+    border: 1px solid #4CAF50;
+        width: 382px;  
+        overflow: hidden;  
+        margin-top: 250px;
+         margin-bottom: 100px;
+        margin-right: 500px;
+        margin-left: 700px; 
+        padding: 10px;  
+        background: #fafbfb;  
+        border-radius: 5px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+ 
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}  
+span{  
+    color: rgb(57, 55, 55);  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}  
